@@ -24,6 +24,9 @@ require("lazy").setup({
   require("config.plugins.nvim-tree"),
   --git提示
   require("config.plugins.gitsigns"),
+  --翻译
+  require("config.plugins.fy"),
+
 
 
 
