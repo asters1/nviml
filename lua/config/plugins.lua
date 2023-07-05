@@ -26,12 +26,13 @@ require("lazy").setup({
   require("config.plugins.gitsigns"),
   --翻译
   require("config.plugins.fy"),
-
-
-
-
+  --LSP
+  -- require("config.plugins.lspconfig").config,
   --自动补全
---  require("config.plugins.lspconfig").config
+  require("config.plugins.autocomplete").config,
+  --vim-go
+  require("config.plugins.go")
+
 --
 --
 --
