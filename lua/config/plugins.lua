@@ -14,14 +14,29 @@ vim.keymap.set("n", "<leader>i", ":Lazy<CR>", { noremap = true })
 
 
 require("lazy").setup({
---	require("config.plugins.telescope").config,
---	require("config.plugins.fzf"),
 --	主题
 	require("config.plugins.colorscheme").background,
   --require("config.plugins.colorscheme").statusline1,
 	require("config.plugins.colorscheme").statusline2,
+  --注释
+	require("config.plugins.comment"),
+  --目录树
+  require("config.plugins.nvim-tree"),
+  --git提示
+  require("config.plugins.gitsigns"),
+
+
+
   --自动补全
-  require("config.plugins.lspconfig").config
+--  require("config.plugins.lspconfig").config
+--
+--
+--
+--
+--
+--
+--	require("config.plugins.telescope").config,
+--	require("config.plugins.fzf"),
 --	require("config.plugins.notify"),
 --	require("config.plugins.statusline"),
 --	require("config.plugins.editor"),
