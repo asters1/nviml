@@ -1,5 +1,5 @@
 return {
-  "https://github.wisteria.cf/asters1/vim-fy",
+  gh.."asters1/vim-fy",
   keys = { "fy","v","V" },
   config = function()
     vim.cmd([[

@@ -1,6 +1,6 @@
 local M={}
 M.background={
-	"https://github.wisteria.cf/theniceboy/nvim-deus",
+	gh.."theniceboy/nvim-deus",
 	lazy = false,
 	priority = 1000,
 	config = function()
@@ -8,9 +8,9 @@ M.background={
 	end,
 }
 M.statusline1={
-	-- "https://github.wisteria.cf/theniceboy/eleline.vim",
+	-- gh.."theniceboy/eleline.vim",
 	-- branch = "no-scrollbar",
-	"https://github.wisteria.cf/nvim-lualine/lualine.nvim",
+	gh.."nvim-lualine/lualine.nvim",
 	config = function()
 		require('lualine').setup {
 			options = {
@@ -55,7 +55,7 @@ M.statusline1={
 	end
 }
 M.statusline2={
-	 "https://github.wisteria.cf/theniceboy/eleline.vim",
+	 gh.."theniceboy/eleline.vim",
 	 branch = "no-scrollbar",
  }
 return M

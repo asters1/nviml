@@ -1,5 +1,5 @@
 return {
-  "https://github.wisteria.cf/numToStr/Comment.nvim",
+  gh.."numToStr/Comment.nvim",
   lazy = false,
   priority = 1000,
   config = function()

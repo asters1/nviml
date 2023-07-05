@@ -1,5 +1,5 @@
 return {
-  "https://github.wisteria.cf/nvim-tree/nvim-tree.lua",
+  gh.."nvim-tree/nvim-tree.lua",
   keys = { "tt" },
   config = function()
     vim.keymap.set('n', 'tt',':NvimTreeToggle<CR>')

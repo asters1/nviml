@@ -1,5 +1,5 @@
 return {
-  "https://github.wisteria.cf/lewis6991/gitsigns.nvim",
+  gh.."lewis6991/gitsigns.nvim",
   lazy = false,
   priority = 1000,
   config = function()
