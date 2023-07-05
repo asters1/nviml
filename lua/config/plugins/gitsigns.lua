@@ -4,11 +4,15 @@ return {
   priority = 1000,
   config = function()
 
+
+
+
+
     --重置
     vim.keymap.set('n', 'gr',':Gitsigns reset_hunk<CR>')
-    --提示
+    --提示commit
     vim.keymap.set('n', 'gb',':Gitsigns blame_line<CR>')
-    --功能未知
+    --跳转修改的位置
     vim.keymap.set('n', 'g-',':Gitsigns prev_hunk<CR>')
     vim.keymap.set('n', 'g=',':Gitsigns next_hunk<CR>')
 
