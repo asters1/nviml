@@ -10,7 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
-vim.keymap.set("n", "<leader>i", ":Lazy<CR>", { noremap = true })
+vim.keymap.set("n", "<leader><leader>", ":Lazy<CR>", { noremap = true })
 
 
 require("lazy").setup({
