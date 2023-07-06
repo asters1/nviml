@@ -17,23 +17,23 @@ require("lazy").setup({
 	
 	
 --	主题
-	-- require("config.plugins.colorscheme").background,
- --  --require("config.plugins.colorscheme").statusline1,
-	-- require("config.plugins.colorscheme").statusline2,
+	 require("config.plugins.colorscheme").background,
+   --require("config.plugins.colorscheme").statusline1,
+	 require("config.plugins.colorscheme").statusline2,
  --  --注释
-	-- require("config.plugins.comment"),
+	 require("config.plugins.comment"),
  --  --目录树
- --  require("config.plugins.nvim-tree"),
+  require("config.plugins.nvim-tree"),
  --  --git提示
- --  require("config.plugins.gitsigns"),
+   require("config.plugins.gitsigns"),
   --翻译
-  -- require("config.plugins.fy"),
+  require("config.plugins.fy"),
   --LSP
-   require("config.plugins.lspconfig"),
+  -- require("config.plugins.lspconfig"),
    
    
   --自动补全
-  require("config.plugins.autocomplete"),
+--  require("config.plugins.autocomplete"),
 
 --
 --
