@@ -57,6 +57,7 @@ local nmappings = {
   { from = "sj",             to = ":set splitright<CR>:vsplit<CR>" },
   { from = "sk",             to = ":set nosplitbelow<CR>:split<CR>" },
   { from = "sl",             to = ":set splitbelow<CR>:split<CR>" },
+  { from = "<C-n>",             to = ":lua IsEnableNum()<CR>" },
   --窗口移动
   {from="<C-h>",to="<C-w>h"},
   {from="<C-j>",to="<C-w>l"},

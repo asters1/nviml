@@ -8,3 +8,15 @@ IsExists=function(path)
     return false
   end
 end
+
+IsEnableNum=function()
+
+  if vim.o.number == true then
+    vim.o.relativenumber=false
+    vim.o.number = false
+  else
+    vim.o.number = true
+    vim.o.relativenumber=true
+  end
+end
+
