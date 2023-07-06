@@ -93,7 +93,7 @@ return {
           "html",
           "jsonls",
           "quick_lint_js",
-          "texlab",
+          -- "texlab",
           -- "marksman",
           "pyright",
           --"r_language_server",
@@ -602,7 +602,7 @@ return {
     },
   },
   {
-    "ray-x/lsp_signature.nvim",
+    gh.."ray-x/lsp_signature.nvim",
     config = function()
       cfg = {
         debug = false,                                            -- set to true to enable debug logging
