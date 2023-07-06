@@ -12,7 +12,7 @@ return {
   {
     gh..		"williamboman/mason-lspconfig.nvim",
     config = function()
-       vim.keymap.set('n', '<leader><leader>',':Mason<CR>')
+       vim.keymap.set('n', '<leader>m',':Mason<CR>')
       -- require("config.plugins.masonlspconfig").config()
       require("mason-lspconfig").setup({
         ensure_installed = {
@@ -30,8 +30,8 @@ return {
           "marksman",
           "pyright",
           --"r_language_server",
-          "sqlls",
-          "taplo",
+          -- "sqlls",
+          -- "taplo",
           "vimls",
           "vuels",
           "yamlls",
