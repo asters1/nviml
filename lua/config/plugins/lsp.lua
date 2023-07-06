@@ -81,7 +81,7 @@ return {
           })
         end,
         dependencies = {
-          { 	"rafamadriz/friendly-snippets" },
+          { gh..	"rafamadriz/friendly-snippets" },
         },
       }, -- Snippets plugin
       { gh..	"ray-x/cmp-treesitter" },
