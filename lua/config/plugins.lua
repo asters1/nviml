@@ -26,10 +26,14 @@ require("lazy").setup({
    require("config.plugins.gitsigns"),
   --翻译
   require("config.plugins.fy"),
-  --LSP与自动补全
+  -- --LSP与自动补全
   require("config.plugins.lsp"),
-  --自动格式化
-  require("config.plugins.autoformat")
+  
+   -- require("config.plugins.lsp-zero"),
+   
+   
+  -- --自动格式化
+  -- require("config.plugins.autoformat")
 
 --
 --
