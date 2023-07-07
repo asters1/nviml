@@ -32,6 +32,8 @@ require("lazy").setup({
   require("config.plugins.mason"),
   require("config.plugins.autocomplete").config,
   require("config.plugins.lspconfig").config,
+  
+
 
 
   -- require("config.plugins.lsp-zero"),
