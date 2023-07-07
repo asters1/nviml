@@ -34,7 +34,7 @@ M.config = {
         require("cmp_nvim_ultisnips").setup {}
       end,
     },
-    -- gh .. "L3MON4D3/LuaSnip",
+    gh .. "L3MON4D3/LuaSnip",
   },
 }
 
@@ -53,7 +53,7 @@ local setCompHL = function()
   vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = fgdark, bg = "#9FBD73" })
   vim.api.nvim_set_hl(0, "CmpItemKindEnum", { fg = fgdark, bg = "#9FBD73" })
   vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = fgdark, bg = "#9FBD73" })
-  
+
   vim.api.nvim_set_hl(0, "CmpItemKindConstant", { fg = fgdark, bg = "#D4BB6C" })
   vim.api.nvim_set_hl(0, "CmpItemKindConstructor", { fg = fgdark, bg = "#D4BB6C" })
   vim.api.nvim_set_hl(0, "CmpItemKindReference", { fg = fgdark, bg = "#D4BB6C" })
@@ -85,15 +85,15 @@ M.configfunc = function()
   vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
   local cmp = require("cmp")
   local cmp_ultisnips_mappings = require("cmp_nvim_ultisnips.mappings")
-  -- local luasnip = require("luasnip")
+  local luasnip = require("luasnip")
 
   setCompHL()
   cmp.setup({
     preselect = cmp.PreselectMode.None,
     snippet = {
       expand = function(args)
-        -- luasnip.lsp_expand(args.body)
-        vim.fn["UltiSnips#Anon"](args.body)
+        luasnip.lsp_expand(args.body)
+        -- vim.fn["UltiSnips#Anon"](args.body)
       end,
     },
     window = {
