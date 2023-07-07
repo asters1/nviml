@@ -4,11 +4,12 @@ vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe 
 vim.cmd([[exec "nohlsearch"]])
 
 --自动加载模板
-local temp = GetAllFile("/root/.config/nvim/lua/config/template")
+local temp = GetAllFile("/home/asters/.config/nvim/lua/config/template")
 local auto_temp = [[
     augroup python_template
     autocmd!
 ]]
+
 for _, f in pairs(temp) do
   local f_type = string.match(f, "[^/]+$")
   -- print(f_type)
@@ -21,4 +22,4 @@ auto_temp = auto_temp .. [[
     augroup END
 ]]
 -- print(auto_temp)
-vim.api.nvim_exec(auto_temp,true)
+vim.api.nvim_exec(auto_temp, true)

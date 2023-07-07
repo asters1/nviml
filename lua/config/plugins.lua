@@ -32,13 +32,20 @@ require("lazy").setup({
   require("config.plugins.mason"),
   require("config.plugins.autocomplete").config,
   require("config.plugins.lspconfig").config,
+  --标题栏
+  require("config.plugins.tabtitle"),
+  -- 语法高亮
+  require("config.plugins.treesitter"),
+  --缩进线
+  -- require("config.plugins.indent"),
 
 
 
 
 
 
-  -- require("config.plugins.lsp-zero"),
+
+
 
 
 
@@ -55,13 +62,11 @@ require("lazy").setup({
   --	require("config.plugins.statusline"),
   --	require("config.plugins.editor"),
   --	require("config.plugins.scrollbar"),
-  --	require("config.plugins.tabline"),
   --	require("config.plugins.autocomplete").config,
   --	require("config.plugins.debugger"),
   --	require("config.plugins.lspconfig").config,
   --	require("config.plugins.flutter"),
   --	require("config.plugins.go"),
-  --	require("config.plugins.treesitter"),
   --	require("config.plugins.joshuto"),
   --	require("config.plugins.comment"),
   --	require("config.plugins.surround"),
@@ -71,7 +76,6 @@ require("lazy").setup({
   --	require("config.plugins.copilot"),
   --	require("config.plugins.markdown"),
   --	require("config.plugins.git"),
-  --	require("config.plugins.indent"),
   --	require("config.plugins.search"),
   --	require("config.plugins.yank"),
   --	require("config.plugins.snippets"),
