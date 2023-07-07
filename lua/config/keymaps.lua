@@ -46,8 +46,8 @@ local nmappings = {
   --录制宏
   { from = "z",             to = "q" },
   --查找下一个居中
-  { from = "n",             to = "nZZ" },
-  { from = "N",             to = "NZZ" },
+  { from = "n",             to = "nzz" },
+  { from = "N",             to = "Nzz" },
   --取消搜索高亮
   { from = "<LEADER><CR>",             to = ":nohlsearch<CR>" },
   --单个字小写变大写

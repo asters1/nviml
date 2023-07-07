@@ -28,17 +28,16 @@ require("lazy").setup({
   require("config.plugins.fy"),
   -- --LSP与自动补全
   -- require("config.plugins.lsp"),
-  --测试LSP
+  --LSP与自动补全并且自动格式化
   require("config.plugins.mason"),
   require("config.plugins.autocomplete").config,
   require("config.plugins.lspconfig").config,
+
 
   -- require("config.plugins.lsp-zero"),
 
 
 
-  -- --自动格式化
-  -- require("config.plugins.autoformat")
 
   --
   --
