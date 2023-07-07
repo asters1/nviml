@@ -26,9 +26,13 @@ IsEnableNum = function()
   if vim.o.number == true then
     vim.o.relativenumber = false
     vim.o.number = false
+    vim.o.signcolumn = "no"
+    vim.cmd([[:DisableHL]])
   else
     vim.o.number = true
     vim.o.relativenumber = true
+    vim.o.signcolumn = "yes"
+    vim.cmd([[:EnableHL]])
   end
 end
 

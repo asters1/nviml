@@ -1,8 +1,8 @@
 local opt = vim.opt
-gh="https://github.wisteria.cf/"
+gh = "https://github.wisteria.cf/"
 
 -- 文本格式为utf-8
-opt.encoding="utf-8"
+opt.encoding = "utf-8"
 -- 行号
 opt.relativenumber = true
 opt.number = true
@@ -28,9 +28,9 @@ opt.ignorecase = true
 opt.smartcase = true
 
 --上下行保持8行
-opt.scrolloff=8
+opt.scrolloff = 8
 --禁用鼠标
-opt.mouse=""
+opt.mouse = ""
 
 
 -- 外观,第一行终端真颜色，第二个"yes"为多一列
