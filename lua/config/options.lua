@@ -1,5 +1,4 @@
 local opt = vim.opt
-gh = "https://github.wisteria.cf/"
 
 -- 文本格式为utf-8
 opt.encoding = "utf-8"

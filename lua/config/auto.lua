@@ -4,7 +4,7 @@ vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe 
 vim.cmd([[exec "nohlsearch"]])
 
 --自动加载模板
-local temp = GetAllFile("/home/asters/.config/nvim/lua/config/template")
+local temp = GetAllFile(HOME .. "/.config/nvim/lua/config/template")
 local auto_temp = [[
     augroup python_template
     autocmd!
