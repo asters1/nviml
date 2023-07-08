@@ -21,12 +21,12 @@ local nmappings = {
   { from = "L",               to = "7j",                              mode = mode_nv },
   -- ---------- INSERT模式 ---------- ---
   { from = "<C-S>",           to = "<ESC>:w<CR>a",                    mode = mode_i },
-  { from = "<C-q>",           to = "<ESC>:q!<CR>",                    mode = mode_i },
   -- ---------- VISUAL模式 ---------- ---
   { from = "#",               to = "<ESC>Vgc",                        mode = mode_v },
   -- ---------- NORMAL模式 ---------- ---
   --退出与保存
   { from = "<C-S>",           to = ":w<CR>" },
+  { from = "<C-q>",           to = "<ESC>:q!<CR>", },
   { from = "q",               to = "ZZ" },
   { from = "Q",               to = "ZZ" },
 
