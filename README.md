@@ -1,0 +1,46 @@
+# coc-setting.json
+- "coc.preferences.semanticTokensHighlights": false：禁用语义标记高亮。
+- "coc.preferences.enableFloatHighlight": true：启用浮动突出显示。
+- "coc.preferences.snippetStatusText": "Ⓢ "：指示代码片段的状态文本。
+- "coc.preferences.extensionUpdateCheck": "daily"：每日检查扩展更新。
+- "coc.preferences.messageLevel": "error"：只显示错误级别的消息。
+- "coc.source.around.firstMatch": false：在源代码周围的文本中第一次匹配，不是最后一次匹配。
+- "coc.source.buffer.firstMatch": false：在缓冲区中第一次匹配，而不是最后一次匹配。
+- "coc.source.syntax.firstMatch": false：在语法中第一次匹配，而不是最后一次匹配。
+- "suggest.detailMaxLength": 60：建议详细信息的最大长度。
+- "suggest.noselect": true：不要在建议列表中自动选择第一个建议项。
+- "suggest.enablePreselect": false：禁用预选。
+- "suggest.triggerAfterInsertEnter": true：在插入后立即触发建议。
+- "suggest.autoTrigger": "always"：始终自动触发建议。
+- "suggest.timeout": 5000：建议列表显示的时间。
+- "suggest.enablePreview": true：启用建议预览。
+- "suggest.floatEnable": true：启用建议浮动窗口。
+- "suggest.detailField": "preview"：建议详细信息字段。
+- "suggest.snippetIndicator": ""：指示代码片段的标记。
+- "suggest.triggerCompletionWait": 100：在触发建议之前等待的时间。
+- "suggest.echodocSupport": true：启用 Echodoc 支持。
+- "suggest.completionItemKindLabels": 建议的建议项种类标签。
+- "diagnostic.signOffset": 1：诊断符号的偏移量。
+- "diagnostic.errorSign": "\uf467"：错误诊断符号的 Unicode 编码。
+- "diagnostic.warningSign": "\uf071"：警告诊断符号的 Unicode 编码。
+- "diagnostic.infoSign": "\uf129"：信息诊断符号的 Unicode 编码。
+- "diagnostic.hintSign": "\uf864"：提示诊断符号的 Unicode 编码。
+- "diagnostic.displayByAle": false：仅使用 CCLS 诊断。
+- "diagnostic.refreshOnInsertMode": false：不在插入模式下刷新诊断。
+- "diagnostic.checkCurrentLine": true：在当前行检查诊断。
+- "diagnostic.virtualTextPrefix": " ❯❯❯ "：虚拟文本前缀。
+- "diagnostic.virtualText": false：禁用虚拟文本。
+- "codeLens.enable": true：启用代码镜头。
+- "list.previewHighlightGroup": "Statement"：预览突出显示组。
+- "list.nextKeymap": "<C-e>"：下一个列表项的键映射。
+- "list.previousKeymap": "<C-u>"：上一个列表项的键映射。
+- "importCost.bundleSizeDecoration": "both"：显示捆绑大小装饰。
+- "importCost.typescriptExtensions": ["\\.tsx?$"]：TypeScript 文件扩展名。
+- "importCost.javascriptExtensions": ["\\.jsx?$"]：JavaScript 文件扩展名。
+- "importCost.showCalculatingDecoration": true：显示计算装饰。
+- "importCost.debug": false：禁用调试模式。
+- "snippets.ultisnips.directories": ["$HOME/.config/nvim/Ultisnips/", "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"]：Ultisnips 目录。
+- "coc.preferences.formatOnSaveFiletypes": 保存时要格式化的文件类型列表。
+- "yaml.format.enable": true：启用 YAML 格式化。
+- "signature.target": "float"：签名提示的目标。
+- "yank.enableCompletion": false：不要在复制时自动触发建议。
