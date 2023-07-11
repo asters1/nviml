@@ -299,8 +299,65 @@ return {
       },
     },
   })
+    -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline({ "/", "?" }, {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+      { name = "buffer" },
+    },
+  })
+
+  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+  cmp.setup.cmdline(":", {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+      { name = "path" },
+    }, {
+      { name = "cmdline" },
+    }),
+  })
+
+  local sign = function(opts)
+    vim.fn.sign_define(opts.name, {
+      texthl = opts.name,
+      text = opts.text,
+      numhl = "",
+    })
+  end
+
+  sign({ name = "DiagnosticSignError", text = "✘" })
+  sign({ name = "DiagnosticSignWarn", text = "▲" })
+  sign({ name = "DiagnosticSignHint", text = "⚑" })
+  sign({ name = "DiagnosticSignInfo", text = "" })
+
+  --Another suit of icon
+  --sign({ name = "DiagnosticSignError", text = "" })
+  --sign({ name = "DiagnosticSignWarn", text = "" })
+  --sign({ name = "DiagnosticSignHint", text = "" })
+  --sign({ name = "DiagnosticSignInfo", text = "" })
+
+  vim.diagnostic.config({
+    virtual_text = true,
+    --virtual_text = false,
+    severity_sort = true,
+    signs = true,
+    update_in_insert = false,
+    underline = false,
+    float = {
+      border = "rounded",
+      source = "always",
+      header = "",
+      prefix = "",
+    },
+  })
+
+  vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+
+  vim.lsp.handlers["textDocument/signatureHelp"] =
+      vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
 
   end,
+  
   dependencies = {
     { "hrsh7th/nvim-cmp" }, -- Autocompletion plugin
     { "hrsh7th/cmp-nvim-lsp" }, -- LSP source for nvim-cmp
