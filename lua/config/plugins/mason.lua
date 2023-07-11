@@ -1,3 +1,4 @@
+-- 就这一个页面就能自动安装,不能安装的话是网络问题
 return {
 	gh.."williamboman/mason-lspconfig.nvim",
 	lazy = false,
@@ -16,7 +17,10 @@ return {
 			}
 		})
 		require("mason-lspconfig").setup({
-			ensure_installed = { "lua_ls", },
+			ensure_installed = { 
+        "lua_ls",
+        "gopls",
+      },
 			automatic_installation = true,
 		})
 	end

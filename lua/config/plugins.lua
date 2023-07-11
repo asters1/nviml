@@ -26,17 +26,19 @@ require("lazy").setup({
   require("config.plugins.gitsigns"),
   --翻译
   require("config.plugins.fy"),
-  -- --LSP与自动补全
-  -- require("config.plugins.lsp"),
-  --LSP与自动补全并且自动格式化
-  require("config.plugins.mason"),
-  require("config.plugins.autocomplete").config,
-  require("config.plugins.lspconfig").config,
   --标题栏
   require("config.plugins.tabtitle"),
   -- 语法高亮
   require("config.plugins.treesitter"),
   --缩进线
   require("config.plugins.indent"),
+  -- --LSP与自动补全
+  -- require("config.plugins.lsp"),
+  require("config.plugins.mason"),
+  require("config.plugins.cmp")
+  --LSP与自动补全并且自动格式化
+  -- require("config.plugins.mason"),
+  -- require("config.plugins.autocomplete").config,
+  -- require("config.plugins.lspconfig").config,
 }, {
 })
