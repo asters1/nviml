@@ -403,6 +403,7 @@ return {
 
   local servers = {
     "clangd",
+    "jdtls",
     "pyright",
     "rust_analyzer",
     "lua_ls",
@@ -418,12 +419,16 @@ return {
     "quick_lint_js",
     "texlab",
   }
-
+for _, lsp in pairs(servers) do
+    lspconfig[lsp].setup({
+      on_attach = on_attach,
+      flags = lsp_flags,
+    })
+  end
 
 
 
   end,
-  
   dependencies = {
     { "hrsh7th/nvim-cmp" }, -- Autocompletion plugin
     { "hrsh7th/cmp-nvim-lsp" }, -- LSP source for nvim-cmp
